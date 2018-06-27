@@ -1,0 +1,16 @@
+
+
+<div *ngIf = words>
+  <h2>Result:</h2>
+  <ul class="words">
+    <li *ngFor = "let word of words"
+        [class.selected]="word === selectedWord"
+        (click) = "onSelect(word)">
+      <span class="badge">{{word.keyword}}</span>
+      <!--{{word.caption}}}-->
+    </li>
+  </ul>
+
+
+  <app-word-caption [word]="selectedWord"> </app-word-caption>
+</div>
