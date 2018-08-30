@@ -1,0 +1,10 @@
+
+<div *ngIf="user">
+  <h2>{{ user.name | uppercase }} </h2>
+  <div><span>id: </span>{{user.id}}</div>
+  <div><span>token: </span>{{user.token}}</div>
+  <div><span>id: </span>{{user.email}}</div>
+</div>
+<div *ngIf="!user">
+<app-google-signin></app-google-signin>
+</div>

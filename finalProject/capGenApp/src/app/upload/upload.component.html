@@ -1,0 +1,21 @@
+
+
+<img id = "img" *ngIf="url" width=600 height=500 src="{{url}}" />
+<div id = "word" *ngIf = "words">
+  <app-word  [words] = "words"> </app-word>
+</div>
+<div *ngIf="loader" class="loader" align="center"></div>
+<div id = "upload">
+  <input id = "input" name="file" type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+  <label id = "label" for="input">Upload Your Image</label>
+  <!--<button id="button" type="button" class="btn btn-success btn-s"-->
+  <!--(click)="upload()"-->
+  <!--[disabled]="!uploader.getNotUploadedItems().length" >-->
+  <!--Upload an Image-->
+  <!--</button>-->
+</div>
+
+
+
+
+

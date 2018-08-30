@@ -1,0 +1,17 @@
+
+<div class = "caption" *ngIf=word>
+  <h2 id = "keyword">{{ word.keyword | uppercase }}</h2>
+  <ul class = "card" ><span>Caption from lyrics: </span>
+    <li *ngFor = "let caption of word.captions">
+      <div class="dropdown">
+        "{{caption.lyrics}}" - {{caption.artistName}}
+      <div class="dropdown-content">
+        <button (click)= "copyClipBoard(caption.lyrics, caption.artistName)">Copy to Clipboard</button>
+        <button onclick= "myFunction()">Go to Lyrics Page</button>
+      </div>
+      </div>
+    </li>
+
+
+  </ul>
+</div>
