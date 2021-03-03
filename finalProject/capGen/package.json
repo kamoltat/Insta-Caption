@@ -19,6 +19,6 @@
     "musicmatch": "^0.3.2",
     "passport": "^0.4.0",
     "passport-google-oauth": "^1.0.0",
-    "pug": "2.0.0-beta11"
+    "pug": "3.0.1"
   }
 }
